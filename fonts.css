@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Beyno';
+	src: url('Fonts/BEYNO.ttf') format(‘truetype’)
+}
+@font-face {
+	font-family: 'Cantarell';
+	src: url('Fonts/Cantarell-Regular.ttf') format(‘truetype’);
+}
+@font-face {
+	font-family: 'Panthera';
+	src: url('Fonts/Panthera.ttf') format(‘truetype’);
+}
+@font-face {
+	font-family: 'Wakanda';
+	src: url('Fonts/Wakanda4Ever.ttf') format(‘truetype’);
+}
