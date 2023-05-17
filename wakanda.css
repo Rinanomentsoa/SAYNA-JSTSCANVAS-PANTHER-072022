@@ -74,17 +74,7 @@ h1{
     font-family: 'Cantarell' ;
     padding-bottom: 2%;
   }
-  h3{
-    font-size: 1.5rem ;
-    font-weight: light;
-    letter-spacing: 3px;
-    word-spacing: 1rem;
-    line-height: 3rem;
-    color: #9E91B7;
-    font-family: 'Wakanda Forever' ;
-    padding-left: 5rem;
-    padding-top: 0;
-  }
+ 
   span{
     line-height: 1.5rem;
     font-family: 'Wakanda Forever';
@@ -113,12 +103,7 @@ h1{
     }*/
 
     /* Grid layout*/
-    main{
-      background: url('Assets/Pantherwakanda2.png') no-repeat center;
-      background-size: 70% ;
-      background-position-y: 0% ;
-      background-position-x: 40% ;
-    }
+    
     
     .article{
       height: fit-content;
@@ -131,7 +116,11 @@ h1{
       height: 17rem;
     }
     .article-container {
-      padding-top: 8rem;
+      background: url('Assets/Pantherwakanda2.png') no-repeat center;
+      background-size: 90% ;
+      background-position-y: 0% ;
+      background-position-x: 40% ;
+      padding-top: 4rem;
       display: grid;
       margin-inline: 8rem;
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -142,11 +131,47 @@ h1{
       margin: auto;
       width: 90%;
     }
-    @media (max-width: 768px) {
-      .article-container {
-        grid-template-columns: 1fr;
-      }
+    .container {
+      padding: 0;
+      margin:0;
+      position: relative;
+      overflow: hidden;
+      height: fit-content;
     }
+    
+    .container img {
+      position: relative;
+      left: -10%;
+      
+      object-fit: cover;
+    }
+   
+    
+    .container article {
+      align-self: start;
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      width: 50%;
+      padding: 20px;
+    }
+    .container  span{
+      font-size: 2rem ;
+      font-weight: light;
+      letter-spacing: 3px;
+      word-spacing: 1rem;
+      line-height: 3rem;
+      color: #9E91B7;
+      font-family: 'Wakanda Forever' ;
+      padding-top: 0;
+    }
+    .container p{
+      padding-right: 45%;
+
+    }
+
+
 
       /* FOOTER */
 footer{
@@ -259,5 +284,12 @@ footer{
     100% {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+
+  /* RESPONSIVENESS */
+  @media (max-width: 768px) {
+    .article-container {
+      grid-template-columns: 1fr;
     }
   }
