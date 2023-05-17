@@ -142,22 +142,26 @@ h1{
     .container img {
       position: relative;
       left: -10%;
-      
       object-fit: cover;
     }
    
     
     .container article {
+
       align-self: start;
       position: absolute;
-      top: 50%;
-      left: 10%;
+      top: 40%;
+      left: 8%;
       transform: translateY(-50%);
-      width: 50%;
+      width: 60%;
       padding: 20px;
     }
+    .container h2{
+      font-size: 3.2rem ;
+
+    }
     .container  span{
-      font-size: 2rem ;
+      font-size: 2.6rem ;
       font-weight: light;
       letter-spacing: 3px;
       word-spacing: 1rem;
@@ -167,7 +171,8 @@ h1{
       padding-top: 0;
     }
     .container p{
-      padding-right: 45%;
+      padding-right: 42%;
+      font-size: 1rem ;
 
     }
 
