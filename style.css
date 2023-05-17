@@ -1,10 +1,98 @@
 
 @import url('fonts.css');
 
-/* TYPOGRAPHY*/
-p{
-    font-family: 'Wakanda' ;
-    font-size: 45px;
-
+/* BACKGROUND */
+body{
+    margin: 0 0 0 0;
+    background: url('Assets/arrière_plan.png') no-repeat;
 }
 
+
+/* TYPOGRAPHY */
+h1{
+    color: #ffffff;
+}
+p{
+    color: #ffffff;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* FOOTER */
+
+footer{
+
+    background: url("Assets/back_footer.png") no-repeat;
+    background-color: rgb(77, 114, 114);
+    margin-block: 0;
+    
+}
+.footer{  
+    padding-top: 10%;
+    padding-bottom: 6%;
+    padding-left: 15%;
+    padding-right: 8%;
+    display: flex;
+}
+
+.footer-image{
+    float: left;
+    flex: 1;
+}
+.top-down{
+    flex: 2;
+    justify-content: space-around;
+    justify-items: center;
+    padding-left: 6%;
+}
+.top-down > p{
+    text-align: start;
+    align-self: center;
+    justify-self: center;
+}
+.side-to-side{
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+.icon-list{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+.icon-list > img{
+    width: wrap;
+    max-width: 20rem;  
+}
+#footer-logo{
+    z-index: 100;
+    position:relative;
+    bottom: 52%;
+    left: 15%;
+}
+#footer-deco{
+    width: 54rem;
+}
+/* FOOTER TYPO*/
+.footer h1{
+    font-size: 1.5rem;
+    Letter-spacing : 28% ;
+    font-family:'Cantarell' ;
+}
+.footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family:'Cantarell' ;
+}
+.footer p{
+    font-size: 1rem;
+    font-family:'Cantarell' ;
+}
+.footer span{
+    font-size: 0.8rem;
+}

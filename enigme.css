@@ -1,0 +1,263 @@
+
+@import url('fonts.css');
+@import url(//db.onlinewebfonts.com/c/582850da0def991b32a24aa69a948d25?family=Wakanda+Forever);
+
+/* BACKGROUND */
+body{
+background:url('Assets/arrière_plan.png') no-repeat;
+text-align: justify;
+}
+  /*HEADER*/
+  header{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 7% ;
+  }
+  
+  .logo{
+    min-width: 20%;
+    display: row ;
+    align-self: center;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+  }
+  .navigation{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Beyno";
+    font-size: 1.1rem;
+    }
+
+ 
+/*TYPOGRAPHY*/
+h1{
+  font-size: 3rem ;
+  font-weight: 100;
+  letter-spacing: 6px;
+  color: #F2CEF2;
+  font-family: 'Beyno' ;
+  padding-bottom: 0;
+}
+h2{
+  font-size: 2.9rem ;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #F2CEF2;
+  font-family: 'Beyno' ;
+  padding-top: 0;
+}
+p{
+  font-size: 0.73rem ;
+  text-align: justify;
+  word-spacing: 2px;
+  color: #FFFFFF;
+  font-weight: 100;
+  font-family: 'Cantarell' ;
+}
+h3{
+  font-size: 1.5rem ;
+  font-weight: light;
+  letter-spacing: 3px;
+  word-spacing: 1rem;
+  line-height: 3rem;
+  color: #9E91B7;
+  font-family: 'Wakanda Forever' ;
+  padding-left: 5rem;
+  padding-top: 0;
+}
+span{
+  line-height: 1.5rem;
+  font-family: 'Wakanda Forever';
+  font-size: 1rem ;
+}
+   /*MAIN section 1*/
+   .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .image{
+    width: 51%;
+  }
+  .content{
+    padding-top: 12rem;
+    padding-inline: auto;
+    width: 47%;
+  }
+  .image img{
+    width: 53rem;
+    position: relative;
+    top: 0rem;
+    left: -2rem;
+    object-fit: cover;
+  }
+  .deco{
+    width: 40rem;
+  }
+  .deco2{
+    width: 40rem;
+  }
+  .float{
+    width: 60%;
+    position: relative;
+    bottom: 18rem;
+    left : 8rem;
+    z-index: 100;
+  }
+/* MAIN  section2*/
+.main-wrapper{
+  padding-inline: 5rem;
+  display: flex;
+  
+}
+.gauche{
+  padding-inline: 5rem;
+  padding-top: 2rem;
+  justify-items: center;
+  display: block;
+  width: 45rem;
+}
+.droite{
+  width: 45rem;
+}
+#button {
+  justify-content: center;
+  color: #021740;
+  justify-content: center;
+  margin-top: 5em;
+  margin-inline: auto;
+  width: fit-content;
+  padding: 2.5% 8%;
+  background: #F2CEF2;
+  border-radius: 3rem ;
+}
+
+#button:hover{
+  box-shadow: 0px 0px 6px#FFFFFF ;
+  justify-content: center;
+  color: #021740;
+  justify-content: center;
+  margin-top: 5em;
+  width: fit-content;
+  margin-inline: auto;
+  padding:  2.5% 8%;
+  background: #F2CEF2;
+  border-radius: 3rem ;
+}
+
+label{
+  font-size: 0.9rem ;
+  word-spacing: 2px;
+  margin-left: .8rem;
+  color: #FFFFFF;
+  font-weight: 100;
+  font-family: 'Cantarell' ;
+
+}
+input {
+  align-self:center;
+  margin-inline: auto;
+  width: 96%;
+  padding: .6rem;
+  background: transparent;
+  border: #F2CEF2 1.5px solid;
+  border-radius: 3rem;
+  color: #F2CEF2;
+}
+.float2{
+  text-align: center;
+  width: 65%;
+  position: relative;
+  bottom : 50%;
+  left : 6rem;
+  z-index: 100;
+}
+form{
+  margin-top: 5rem;
+  justify-content: center;
+  
+}
+/* FOOTER */
+
+footer{
+
+  background: url("Assets/back_footer.png") no-repeat;
+  background-color: rgb(77, 114, 114);
+  margin-block: 0;
+  
+}
+.footer{  
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  padding-left: 15rem;
+  padding-right: 8rem;
+  display: flex;
+}
+
+.footer-image{
+  float: left;
+  flex: 1;
+}
+.top-down{
+  flex: 2;
+  justify-content: space-around;
+  justify-items: center;
+  padding-left: 6%;
+}
+.top-down > p{
+  text-align: start;
+  align-self: center;
+  justify-self: center;
+}
+.side-to-side{
+  display: flex;
+  justify-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+.icon-list{
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+}
+.icon-list > img{
+  width: wrap;
+  max-width: 20rem;  
+}
+
+#footer-deco{
+  width: 18rem;
+}
+/* FOOTER TYPO*/
+.footer h1{
+  font-size: 1.5rem;
+  Letter-spacing : 28% ;
+  font-family:'Cantarell' ;
+}
+.footer a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-family:'Cantarell' ;
+}
+.footer p{
+  font-size: 1rem;
+  font-family:'Cantarell' ;
+}
+.footer span{
+  font-size: 0.8rem;
+}
+#footer-logo{
+  z-index: 100;
+  position:relative;
+  bottom: 53%;
+  left: 19%;
+}

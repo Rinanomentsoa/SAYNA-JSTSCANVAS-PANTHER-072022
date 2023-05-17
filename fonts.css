@@ -1,3 +1,4 @@
+@import url(//db.onlinewebfonts.com/c/582850da0def991b32a24aa69a948d25?family=Wakanda+Forever);
 @font-face {
 	font-family: 'Beyno';
 	src: url('Fonts/BEYNO.ttf') format(‘truetype’)
@@ -11,6 +12,14 @@
 	src: url('Fonts/Panthera.ttf') format(‘truetype’);
 }
 @font-face {
-	font-family: 'Wakanda';
-	src: url('Fonts/Wakanda4Ever.ttf') format(‘truetype’);
+	font-family: 'Wakanda Forever Courant';
+	src: url('Fonts/WakandaForever.ttf') format(‘truetype’);
 }
+@font-face {
+	font-family: "Wakanda Forever"; 
+	src: url("//db.onlinewebfonts.com/t/582850da0def991b32a24aa69a948d25.eot"); 
+	src: url("//db.onlinewebfonts.com/t/582850da0def991b32a24aa69a948d25.eot?#iefix") format("embedded-opentype"), 
+	url("//db.onlinewebfonts.com/t/582850da0def991b32a24aa69a948d25.woff2") format("woff2"),
+	 url("//db.onlinewebfonts.com/t/582850da0def991b32a24aa69a948d25.woff") format("woff"),
+	  url("//db.onlinewebfonts.com/t/582850da0def991b32a24aa69a948d25.ttf") format("truetype"), 
+	  url("//db.onlinewebfonts.com/t/582850da0def991b32a24aa69a948d25.svg#Wakanda Forever") format("svg"); }
