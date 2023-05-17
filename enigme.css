@@ -23,6 +23,7 @@ text-align: justify;
     place-items: center;
     align-items: center;
   }
+
   .navigation{
     width: 30%;
     display: flex;
@@ -34,7 +35,22 @@ text-align: justify;
     font-family: "Beyno";
     font-size: 1.1rem;
     }
-
+    .navigation a:hover{
+      text-decoration: underline;
+      color: #ffffff;
+      font-family: "Beyno";
+      font-size: 1.3rem;
+      }
+    .navigation a:active{
+      text-decoration: underline;
+      color: #9E91B7;
+      font-weight: 300;
+      font-family: "Beyno";
+      font-size: 1.2rem;
+      transform: translateY(-0.3rem);
+      transition: all 1s ease;
+      }
+      
  
 /*TYPOGRAPHY*/
 h1{
@@ -232,9 +248,27 @@ footer{
   width: wrap;
   max-width: 20rem;  
 }
-
+.icon-list > img:hover{
+  width: wrap;
+  transform: scale(1.6);
+  transition: all .5s ease;
+}
+.icon-list > img:hover{
+  transform: rotate(20%);
+}
 #footer-deco{
   width: 18rem;
+}
+#footer-logo{
+  z-index: 100;
+  position:relative;
+  bottom: 53%;
+  left: 19%;
+}
+.footer-image:hover{
+  transform: scale(110%);
+  transition: all 0.5s ease;
+  
 }
 /* FOOTER TYPO*/
 .footer h1{
@@ -248,16 +282,33 @@ footer{
   font-size: 1.3rem;
   font-family:'Cantarell' ;
 }
+.footer a:hover{
+  text-decoration: none;
+  color: #9E91B7;
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-family:'Cantarell' ;
+  transform: translateX(+30%);
+}
 .footer p{
   font-size: 1rem;
   font-family:'Cantarell' ;
 }
-.footer span{
-  font-size: 0.8rem;
+
+/* EFFET FADE  IN */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: fade-in-left 2s forwards;
 }
-#footer-logo{
-  z-index: 100;
-  position:relative;
-  bottom: 53%;
-  left: 19%;
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
