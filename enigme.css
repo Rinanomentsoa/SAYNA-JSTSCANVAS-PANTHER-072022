@@ -120,6 +120,9 @@ span{
   }
   .deco2{
     width: 40rem;
+    position: relative;
+    bottom: 8rem;
+    z-index: 100;
   }
   .float{
     width: 60%;

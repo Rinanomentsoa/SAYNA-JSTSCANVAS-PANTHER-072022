@@ -1,98 +1,207 @@
-
 @import url('fonts.css');
+@import url(//db.onlinewebfonts.com/c/582850da0def991b32a24aa69a948d25?family=Wakanda+Forever);
 
 /* BACKGROUND */
 body{
-    margin: 0 0 0 0;
-    background: url('Assets/arrière_plan.png') no-repeat;
+background:url('Assets/arrière_plan.png') no-repeat;
+text-align: justify;
 }
+  /*HEADER*/
+  header{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 7% ;
+  }
+  
+  .logo{
+    min-width: 20%;
+    display: row ;
+    align-self: center;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+  }
 
-
-/* TYPOGRAPHY */
-h1{
-    color: #ffffff;
-}
-p{
-    color: #ffffff;
-}
-a{
-    color: #ffffff;
+  .navigation{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation a{
     text-decoration: none;
-}
+    color: #ffffff;
+    font-family: "Beyno";
+    font-size: 1.1rem;
+    }
+    .navigation a:hover{
+      text-decoration: underline;
+      color: #ffffff;
+      font-family: "Beyno";
+      font-size: 1.3rem;
+      }
+    .navigation a:active{
+      text-decoration: underline;
+      color: #9E91B7;
+      font-weight: 300;
+      font-family: "Beyno";
+      font-size: 1.2rem;
+      transform: translateY(-0.3rem);
+      transition: all 1s ease;
+      }
+/*TYPOGRAPHY*/
+h1{
+    font-size: 3rem ;
+    font-weight: 100;
+    letter-spacing: 6px;
+    color: #F2CEF2;
+    font-family: 'Beyno' ;
+    padding-bottom: 0;
+  }
+  h2{
+    font-size: 2.9rem ;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #F2CEF2;
+    font-family: 'Beyno' ;
+    padding-top: 0;
+  }
+  p{
+    font-size: 0.73rem ;
+    text-align: justify;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: 100;
+    font-family: 'Cantarell' ;
+  }
+  h3{
+    font-size: 1.5rem ;
+    font-weight: light;
+    letter-spacing: 3px;
+    word-spacing: 1rem;
+    line-height: 3rem;
+    color: #9E91B7;
+    font-family: 'Wakanda Forever' ;
+    padding-left: 5rem;
+    padding-top: 0;
+  }
+  span{
+    line-height: 1.5rem;
+    font-family: 'Wakanda Forever';
+    font-size: 1rem ;
+  }
 
 
-/* FOOTER */
 
+
+      /* FOOTER */
 footer{
-
     background: url("Assets/back_footer.png") no-repeat;
     background-color: rgb(77, 114, 114);
-    margin-block: 0;
+    margin: 0;
     
-}
-.footer{  
-    padding-top: 10%;
-    padding-bottom: 6%;
-    padding-left: 15%;
-    padding-right: 8%;
+  }
+  .footer{  
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    padding-left: 15rem;
+    padding-right: 8rem;
     display: flex;
-}
-
-.footer-image{
+  }
+  
+  .footer-image{
     float: left;
     flex: 1;
-}
-.top-down{
+  }
+  .top-down{
     flex: 2;
     justify-content: space-around;
     justify-items: center;
     padding-left: 6%;
-}
-.top-down > p{
+  }
+  .top-down > p{
     text-align: start;
     align-self: center;
     justify-self: center;
-}
-.side-to-side{
+  }
+  .side-to-side{
     display: flex;
     justify-items: flex-start;
     justify-content: space-between;
     padding-bottom: 4rem;
-}
-.icon-list{
+  }
+  .icon-list{
     display: flex;
     justify-items: center;
     justify-content: space-around;
-}
-.icon-list > img{
+  }
+  .icon-list > img{
     width: wrap;
     max-width: 20rem;  
-}
-#footer-logo{
+  }
+  .icon-list > img:hover{
+    width: wrap;
+    transform: scale(1.6);
+    transition: all .5s ease;
+  }
+  .icon-list > img:hover{
+    transform: rotate(20%);
+  }
+  #footer-deco{
+    width: 18rem;
+  }
+  #footer-logo{
     z-index: 100;
     position:relative;
-    bottom: 52%;
-    left: 15%;
-}
-#footer-deco{
-    width: 54rem;
-}
-/* FOOTER TYPO*/
-.footer h1{
+    bottom: 53%;
+    left: 19%;
+  }
+  .footer-image:hover{
+    transform: scale(110%);
+    transition: all 0.5s ease;
+    
+  }
+  /* FOOTER TYPO*/
+  .footer h1{
     font-size: 1.5rem;
     Letter-spacing : 28% ;
     font-family:'Cantarell' ;
-}
-.footer a{
+  }
+  
+  .footer a{
     text-decoration: none;
     color: #ffffff;
     font-size: 1.3rem;
     font-family:'Cantarell' ;
-}
-.footer p{
+  }
+  .footer a:hover{
+    text-decoration: none;
+    color: #9E91B7;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family:'Cantarell' ;
+    transform: translateX(+30%);
+  }
+  .footer p{
+    color: #ffffff;
     font-size: 1rem;
     font-family:'Cantarell' ;
-}
-.footer span{
-    font-size: 0.8rem;
-}
+  }
+  
+  /* EFFET FADE  IN */
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fade-in-left 2s forwards;
+  }
+  
+  @keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
