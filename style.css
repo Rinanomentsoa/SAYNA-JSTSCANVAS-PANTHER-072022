@@ -57,6 +57,7 @@ h1{
   color: #9E91B7;
   font-family: 'Beyno' ;
   padding-bottom: 0;
+  padding-top: 0;
 }
 
   h2{
@@ -66,6 +67,7 @@ h1{
     color: #F2CEF2;
     font-family: 'Beyno' ;
     padding-top: 0;
+    padding-bottom: 0;
   }
   
   p{
@@ -133,25 +135,59 @@ p.more{
   text-decoration: underline;
   text-align: left;
   word-spacing: 2px;
-  color: #F2CEF2;
+  color: #Ffffff;
   font-weight: 100;
   font-family: 'Cantarell' ;
 }
+/* Slider */
+.slide-container{
+  margin-left: 8rem ;
+  border: #f5f690 1px solid;
+  display: flex;  
+}
+.slider{
+  display: flex;
+}
+.slide-next{
+  display: flex;
+  background-color: #021740;
+  margin-block:2rem;
+}
+
+img.slider{
+  width: 20rem;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.slide-container .article{
+  height: auto;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-inline: 1rem ;
+  }
+
+
+
+
 /* Grid layout*/
 
 .article-container {
   padding-top: 4rem;
   display: grid;
-  margin-inline: 10rem;
+  margin-left: 10rem;
+  margin-right: 7rem;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   row-gap: 1rem;
-  column-gap: 4rem;
+  column-gap: 1rem;
 }
 
 .article{
   height: fit-content;
   border: #37b51e 3px solid;
 }
+
 article.aside{
   height: fit-content;
   border: #981cb0 2px solid;
@@ -165,6 +201,86 @@ iframe.video{
   height: 17rem;
 }
 
+/* Box du personnage */
+.box{
+  padding-left: 8rem;
+  justify-items: center;
+  padding-right: 3rem;
+  position: relative;
+}
+
+.image-container{
+  position: absolute;
+  top: 0;
+  left: 30%;
+  z-index: 100;
+  margin-inline: auto; 
+  justify-self: center;
+  align-self: center;
+}
+.image-container img{
+  width: 20rem;
+  object-fit: cover;
+}
+
+.details{
+  margin-top: 8.5rem;
+  margin-inline: auto; 
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  width: 70%;
+  padding-inline: 4rem ;
+  padding-top: 19rem;
+  padding-bottom: 2rem;
+  position: relative;
+  justify-content: initial;
+}
+
+.box .details h1{
+  font-family: 'Cantarell';
+  color: #171515;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: initial;
+}
+
+.tag{
+  display: flex;
+  justify-content: space-between;
+}
+h6.tag{
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 2% 5%;
+  font-weight: 400;
+  font-family: 'Cantarell' ;
+  background-color: #3D2DA6;
+  border-radius: 10%;
+  color: #ffffff;
+}
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.details p {
+  color: #171515;
+}
+.details strong {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #171515;
+  line-height: 1.5rem;
+}
+.details span {
+  font-size: 0.6rem;
+  color: #171515;
+}
+.panther{
+  width: 80%;
+ margin-left: 6rem;
+ margin-bottom: 2rem;
+}
 
 /* FORM*/
 .form-container {
