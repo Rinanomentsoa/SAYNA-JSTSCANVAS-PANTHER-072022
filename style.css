@@ -51,13 +51,14 @@ text-align: justify;
       }
 /*TYPOGRAPHY*/
 h1{
-    font-size: 3rem ;
-    font-weight: 100;
-    letter-spacing: 6px;
-    color: #F2CEF2;
-    font-family: 'Beyno' ;
-    padding-bottom: 0;
-  }
+  font-size: 1rem ;
+  font-weight: 100;
+  
+  color: #9E91B7;
+  font-family: 'Beyno' ;
+  padding-bottom: 0;
+}
+
   h2{
     font-size: 2.9rem ;
     font-weight: 100;
@@ -66,32 +67,189 @@ h1{
     font-family: 'Beyno' ;
     padding-top: 0;
   }
+  
   p{
     font-size: 0.73rem ;
-    text-align: justify;
     word-spacing: 2px;
     color: #FFFFFF;
     font-weight: 100;
     font-family: 'Cantarell' ;
+    padding-bottom: 0.6rem;
   }
-  h3{
-    font-size: 1.5rem ;
-    font-weight: light;
-    letter-spacing: 3px;
-    word-spacing: 1rem;
-    line-height: 3rem;
-    color: #9E91B7;
-    font-family: 'Wakanda Forever' ;
-    padding-left: 5rem;
-    padding-top: 0;
-  }
-  span{
-    line-height: 1.5rem;
-    font-family: 'Wakanda Forever';
-    font-size: 1rem ;
+  .article-content span{
+    color: #FFFFFF;
+    font-size: 0.66rem ;
+    line-height: 1rem;
+    font-family: 'Cantarell';
   }
 
+/* MAIN */
+/* Première partie */
+.container {
+  margin-top: 2rem;
+  margin-inline: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container h1{
+  font-size: 3rem ;
+  font-weight: 100;
+  color: #9E91B7;
+  font-family: 'Panthera' ;
+  padding-bottom: 0;
+}
+.container span{
+  font-size: 1.8rem ;
+  font-weight: light;
+  line-height: 3rem;
+  color: #9E91B7;
+  font-family: 'Beyno' ;
+  padding-top: 0;
+}
+.image {
+  border: #b67878 3px solid;
+  flex: 7;
+  min-width: 300px;
+  padding-top: 8rem;
+  background: url('Assets/Pantherhome1.png') no-repeat center;
+  background-size: 80%;
+  background-position-x: 100%;
+}
+.container p{
+  font-size: 0.8rem ;
+  text-align: left;
+}
 
+.text {
+  border: #FFFFFF 2px solid;
+  flex: 4;
+  min-width: 300px;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+p.more{
+  font-size: 0.8rem ;
+  text-decoration: underline;
+  text-align: left;
+  word-spacing: 2px;
+  color: #F2CEF2;
+  font-weight: 100;
+  font-family: 'Cantarell' ;
+}
+/* Grid layout*/
+
+.article-container {
+  padding-top: 4rem;
+  display: grid;
+  margin-inline: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  row-gap: 1rem;
+  column-gap: 4rem;
+}
+
+.article{
+  height: fit-content;
+  border: #37b51e 3px solid;
+}
+article.aside{
+  height: fit-content;
+  border: #981cb0 2px solid;
+
+}
+
+iframe.video{
+  align-self: center;
+  margin: auto;
+  width: 34rem ;
+  height: 17rem;
+}
+
+
+/* FORM*/
+.form-container {
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  justify-items: center;
+  place-content: center;
+  justify-content: center;
+}
+.decoration{
+  margin-inline: 0;
+  margin-bottom: 6rem;
+background: linear-gradient(315deg, rgba(255,255,255,0.13631390056022408) 0%, rgba(249,248,252,0) 100%);
+}
+.contact-form{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  align-self: center;
+  margin-inline: auto;
+  width: 35%;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(231, 225, 242, 0.37) 80%);
+  justify-items: center;
+  margin-top:12rem ;
+  margin-inline: 18rem ;
+  border-radius: 9rem ;
+  padding-block: 2rem;
+  padding-inline: 10rem ;
+}
+#button {
+  align-self: center;
+  color: #021740;
+  margin-top: 1.5em;
+  margin-inline: auto;
+  justify-content: center;
+  width: fit-content;
+  padding:  .5rem 3rem;
+  background: #F2CEF2;
+  border-radius: 3rem ;
+}
+
+#button:hover{
+  box-shadow: 0px 0px 6px#021740 ;
+}
+
+input {
+  align-self: center;
+  margin-block: 0.5rem;
+  align-self:center;
+  margin-inline: auto;
+  width: 96%;
+  padding: .6rem;
+  background: transparent;
+  border: #021740 1px solid;
+  border-radius: 3rem;
+  color: #021740;
+  outline-color: #F2CEF2;
+}
+
+input.message-input {
+  border-radius: 1.2rem;
+  padding-bottom: 9rem;
+  
+}
+/* form typo */
+.contact-form p{
+  font-size:0.9rem ;
+  text-align: center;
+  color: #021740;
+  font-family: 'Cantarell';
+  line-height: inherit;
+
+}
+.contact-form strong{
+  padding: 0;
+  margin: O;
+  text-align: center;
+  color: #021740;
+  font-size: 2.3rem ;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: 'Cantarell';
+
+}
 
 
       /* FOOTER */
@@ -164,7 +322,7 @@ footer{
   /* FOOTER TYPO*/
   .footer h1{
     font-size: 1.5rem;
-    Letter-spacing : 28% ;
+    letter-spacing: 6px;
     font-family:'Cantarell' ;
   }
   
@@ -205,3 +363,15 @@ footer{
       transform: translateX(0);
     }
   }
+  /* RESPONSIVENESS*/
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .image, .article {
+      flex: 1;
+      min-width: auto;
+    }
+  }
+  
