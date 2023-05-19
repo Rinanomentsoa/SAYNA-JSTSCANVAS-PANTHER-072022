@@ -6,6 +6,7 @@
 body{
 background:url('Assets/arrière_plan.png') no-repeat;
 text-align: justify;
+background-color: #021740;
 }
   /*HEADER*/
   header{
@@ -335,7 +336,6 @@ footer{
   .footer-image{
     display: none;
   }
-  
   .footer h1{
     font-size: 0.9rem;
     Letter-spacing : 12% ;
