@@ -3,6 +3,8 @@
 
 /* BACKGROUND */
 body{
+height: fit-content;
+background-color: black;
 background:url('Assets/arrière_plan.png') no-repeat;
 text-align: justify;
 }
@@ -87,21 +89,9 @@ h1{
   }
 
     /* MAIN */
-    /*.main-image{
-      margin: 0;
-      position: absolute;
-      right: 0;
-    }
-    .main-image img{
-      width:100rem;
-      object-fit: cover;
-      appearance: 1/1;
-      position: relative;
-      top: 10%;
-      right: 0;
-    
-    }*/
-
+main{
+  height: fit-content;
+}
     /* Grid layout*/
     
     
@@ -112,15 +102,17 @@ h1{
     iframe.video{
       align-self: center;
       margin: auto;
-      width: 34rem ;
-      height: 17rem;
+      width: 90% ;
+      height: auto;
     }
     .article-container {
+      height: fit-content;
+      background-color: black;
       background: url('Assets/Pantherwakanda2.png') no-repeat center;
       background-size: 90% ;
       background-position-y: 0% ;
       background-position-x: 40% ;
-      padding-top: 4rem;
+      padding-block: 4rem;
       display: grid;
       margin-inline: 8rem;
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -130,6 +122,7 @@ h1{
     .article-image{
       margin: auto;
       width: 90%;
+
     }
     .container {
       padding: 0;
@@ -155,6 +148,7 @@ h1{
       transform: translateY(-50%);
       width: 60%;
       padding: 20px;
+      height: fit-content;
     }
     .container h2{
       font-size: 3.2rem ;
@@ -173,7 +167,6 @@ h1{
     .container p{
       padding-right: 42%;
       font-size: 1rem ;
-
     }
 
 
@@ -293,6 +286,106 @@ footer{
   }
 
   /* RESPONSIVENESS */
+  /*HEADER responsive*/
+  @media (max-width: 700px) {
+    /*FOOTER responsive  pour les écrans moins de 700 px*/ 
+    .footer{  
+     padding-left: 4rem;
+     padding-right: 2rem;
+     padding-top: 4rem;
+     padding-bottom: 1em;
+     overflow: hidden;
+   }
+   .side-to-side{
+     flex-direction: column;
+   }
+ 
+   .icon-list > img{
+     width: wrap;
+     max-width: 10rem;  
+   }
+   .footer-image{
+     display: none;
+   }
+   .footer h1{
+     font-size: 0.9rem;
+     Letter-spacing : 12% ;
+   }
+   .footer a{
+     font-size: 0.7rem;
+   }
+   .footer p{
+     font-size: 0.6rem;
+   }
+     
+   }
+   
+ 
+ @media (max-width: 975px) {
+   /*HEADER responsive pour les écrans moins de 975 px **/
+   .navigation{
+     width: fit-content;
+     display: flex;
+     flex-direction: column;
+     justify-items: space-between;
+   }
+   .navigation a{
+     font-size: 1.1rem;
+     padding-block: .5rem;
+     text-align: right;
+     }
+    /*FOOTER responsive  pour les écrans moins de 975 px*/ 
+    .footer{  
+     padding-left: 4rem;
+     padding-right: 2rem;
+     padding-top: 4rem;
+     padding-bottom: 1em;
+     overflow: hidden;
+   }
+   .side-to-side{
+     flex-direction: column;
+   }
+ 
+   .icon-list > img{
+     width: wrap;
+     max-width: 10rem;  
+   }
+   #footer-deco{
+     width: 18rem;
+   }
+   #footer-logo{
+     z-index: 100;
+     position:relative;
+     bottom: 49%;
+     left: 19.5%;
+   }
+   .icon-list{
+     width: 65%;
+   }
+   .footer h1{
+     font-size: 1.2rem;
+     Letter-spacing : 22% ;
+   }
+   .footer a{
+     font-size: 1rem;
+   }
+   .footer p{
+     font-size: 0.7rem;
+   }
+     
+   }
+   
+ 
+   @media (max-width: 1225px) {
+     /*FOOTER responsive pour les écrans moins de 1225 px*/ 
+   
+     .footer{  
+       padding-left: 4rem;
+       padding-right: 2rem;
+       overflow: hidden;
+     }
+     }
+  
   @media (max-width: 768px) {
     .article-container {
       grid-template-columns: 1fr;

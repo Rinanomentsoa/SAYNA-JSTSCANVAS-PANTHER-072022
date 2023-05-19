@@ -560,12 +560,112 @@ footer{
       transform: translateX(0);
     }
   }
+
   /* RESPONSIVENESS*/
+  /*HEADER responsive*/
+
+  @media (max-width: 700px) {
+    /*FOOTER responsive  pour les écrans moins de 700 px*/ 
+    .footer{  
+     padding-left: 4rem;
+     padding-right: 2rem;
+     padding-top: 4rem;
+     padding-bottom: 1em;
+     overflow: hidden;
+   }
+   .side-to-side{
+     flex-direction: column;
+   }
+ 
+   .icon-list > img{
+     width: wrap;
+     max-width: 10rem;  
+   }
+   .footer-image{
+     display: none;
+   }
+   .footer h1{
+     font-size: 0.9rem;
+     Letter-spacing : 12% ;
+   }
+   .footer a{
+     font-size: 0.7rem;
+   }
+   .footer p{
+     font-size: 0.6rem;
+   }
+     
+   }
+   
+ 
+ @media (max-width: 975px) {
+   /*HEADER responsive pour les écrans moins de 975 px **/
+   .navigation{
+     width: fit-content;
+     display: flex;
+     flex-direction: column;
+     justify-items: space-between;
+   }
+   .navigation a{
+     font-size: 1.1rem;
+     padding-block: .5rem;
+     text-align: right;
+     }
+    /*FOOTER responsive  pour les écrans moins de 975 px*/ 
+    .footer{  
+     padding-left: 4rem;
+     padding-right: 2rem;
+     padding-top: 4rem;
+     padding-bottom: 1em;
+     overflow: hidden;
+   }
+   .side-to-side{
+     flex-direction: column;
+   }
+ 
+   .icon-list > img{
+     width: wrap;
+     max-width: 10rem;  
+   }
+   #footer-deco{
+     width: 18rem;
+   }
+   #footer-logo{
+     z-index: 100;
+     position:relative;
+     bottom: 49%;
+     left: 19.5%;
+   }
+   .icon-list{
+     width: 65%;
+   }
+   .footer h1{
+     font-size: 1.2rem;
+     Letter-spacing : 22% ;
+   }
+   .footer a{
+     font-size: 1rem;
+   }
+   .footer p{
+     font-size: 0.7rem;
+   }
+     
+   }
+   
+ 
+   @media (max-width: 1225px) {
+     /*FOOTER responsive pour les écrans moins de 1225 px*/ 
+   
+     .footer{  
+       padding-left: 4rem;
+       padding-right: 2rem;
+       overflow: hidden;
+     }
+     }
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
     }
-  
     .image, .article {
       flex: 1;
       min-width: auto;
