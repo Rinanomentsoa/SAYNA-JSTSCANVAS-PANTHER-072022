@@ -214,7 +214,6 @@ footer{
   
 }
 .footer{  
-  border: #9E91B7 2px solid;
   padding-top: 8rem;
   padding-bottom: 2rem;
   padding-left: 15rem;
@@ -223,7 +222,6 @@ footer{
 }
 
 .footer-image{
-  border: #b9ed88 2px solid;
   float: left;
   flex: 1;
 }
@@ -317,6 +315,28 @@ footer{
 /* RESPONSIVENESS */
 
 @media (max-width: 700px) {
+  /* MAIn */
+    /* main wrapper */
+    .image {
+      width: 3rem;
+    }
+    h3{
+      font-size: 0.8rem;
+    }
+    .content h2,h1{
+      font-size: 1rem;
+    }
+    .float2{
+      width: 12rem;
+      height: fit-content;
+    }
+    .float{
+      position: absolute; 
+      left:-50rem;
+      width: 22rem;
+      height: fit-content;
+    }
+
    /*FOOTER responsive  pour les écrans moins de 700 px*/ 
    .footer{  
     padding-left: 4rem;
@@ -328,7 +348,6 @@ footer{
   .side-to-side{
     flex-direction: column;
   }
-
   .icon-list > img{
     width: wrap;
     max-width: 10rem;  
@@ -363,6 +382,42 @@ footer{
     padding-block: .5rem;
     text-align: right;
     }
+    
+    /* MAIn */
+    /* main wrapper */
+    .wrapper{
+      padding-inline:5% ;
+    margin-inline: auto;
+
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .image img{
+    width: 30rem;
+  }
+
+    .main-wrapper{
+
+      margin-inline:0 rem;
+      padding-inline: 0rem;
+      overflow: hidden;
+    }
+    h3{
+      font-size: 1.2rem;
+    }
+    .content h2,h1{
+      font-size: 2rem;
+    }
+    .alphabets{
+      padding: 0;
+      width: 60%;
+    }
+    .float2{
+      position: relative; 
+      left:0;
+    }
+    
    /*FOOTER responsive  pour les écrans moins de 975 px*/ 
    .footer{  
     padding-left: 4rem;
@@ -404,13 +459,49 @@ footer{
     
   }
   
-
   @media (max-width: 1225px) {
+    /* MAIn */
+    /* main wrapper */
+    .main-wrapper{
+      padding-inline: 5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .float2{
+      background-color: #9e91b756;
+      border: #DF99F2 1px solid;
+      border-radius:3rem ;
+      margin-inline: auto;
+      padding:2rem;
+    }
+    .deco{
+      display:none ;
+    }
+    .deco2{
+      display:none ;
+    }
+    .content{
+      padding-top: 12rem;
+      padding-inline: auto;
+      width: 47%;
+    }
+    .float{
+      background-color: #9e91b756;
+      border: #DF99F2 1px solid;
+      border-radius:3rem ;
+      padding:2rem;
+      margin-inline: auto;
+      position: relative;
+      top: 4rem;
+      left: 0rem;
+      margin-bottom: 2rem;
+    }
     /*FOOTER responsive pour les écrans moins de 1225 px*/ 
-  
     .footer{  
       padding-left: 4rem;
       padding-right: 2rem;
       overflow: hidden;
     }
+
+    
     }

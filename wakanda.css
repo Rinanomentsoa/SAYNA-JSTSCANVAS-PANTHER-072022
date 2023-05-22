@@ -92,7 +92,6 @@ h1{
 
     /* MAIN */
 main{
-  border: #fd77fd 4px solid;
   z-index: 0;
   height: fit-content;
   margin: 0;
@@ -110,7 +109,6 @@ main{
     }
     .article-container {
       height: fit-content;
-      border: #9E91B7 3px solid;
       background: url('Assets/Pantherwakanda2.png') no-repeat center;
       background-size: 90% ;
       background-position-y: 0% ;

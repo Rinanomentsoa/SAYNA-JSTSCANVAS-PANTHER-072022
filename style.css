@@ -163,7 +163,6 @@ width: 2.5px;
   padding-top: 0;
 }
 .image {
-  border: #b67878 3px solid;
   flex: 7;
   min-width: 300px;
   padding-top: 8rem;
@@ -177,7 +176,6 @@ width: 2.5px;
 }
 
 .text {
-  border: #FFFFFF 2px solid;
   flex: 4;
   min-width: 300px;
   padding-top: 8rem;
@@ -217,7 +215,6 @@ p.more:hover{
 }
 .slide-container{
   margin-left: 8rem ;
-  border: #f5f690 1px solid;
   display: flex;  
 }
 .slider{
@@ -260,12 +257,10 @@ img.slider{
 
 .article{
   height: fit-content;
-  border: #37b51e 3px solid;
 }
 
 article.aside{
   height: fit-content;
-  border: #981cb0 2px solid;
 
 }
 
@@ -654,9 +649,31 @@ footer{
      
    }
    
- 
+ /* RESPONSIVENESS pour les écrans de 1225px et moins*/
+
    @media (max-width: 1225px) {
-     /*FOOTER responsive pour les écrans moins de 1225 px*/ 
+    /* Slider */
+.ri-arrow-right-s-line{
+  display: none;
+}
+.slide-container{
+  margin-inline:auto ;
+  flex-direction: column;
+  width: 50%;
+}
+.slider{
+  display: flex;
+}
+.slide-next{
+  margin-inline:auto ;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.slide-container .article{
+  background-color: #021740;
+  }
+ /*FOOTER responsive pour les écrans moins de 1225 px*/ 
    
      .footer{  
        padding-left: 4rem;
@@ -664,7 +681,16 @@ footer{
        overflow: hidden;
      }
      }
+
+
+  /* Pour les écrans de moins de 768px*/
+
   @media (max-width: 768px) {
+    /*MAIN */
+    /* slider */
+    img.slider{
+      width: 15rem;
+    }
     .container {
       flex-direction: column;
     }
@@ -672,5 +698,77 @@ footer{
       flex: 1;
       min-width: auto;
     }
+    .decoration{
+      width: 92rem;
+      margin-inline: 0;
+      margin-bottom: 6rem;
+    background: linear-gradient(315deg, rgba(255,255,255,0.13631390056022408) 0%, rgba(249,248,252,0) 100%);
+    }
+    /* Box du personnage */
+.box{
+  padding-left: 2rem;
+}
+
+.image-container{
+  left: 25%;
+}
+.image-container img{
+  width: 15rem;
+  object-fit: cover;
+}
+.tag{
+  height: 20%;
+  flex-direction: column;
+  
+}
+
+.details{
+  margin-top: 8.5rem;
+  padding-top: 12rem;
+}
   }
   
+ 
+ /* Pour les écrans de moins de 925px*/
+  /* FORM*/
+  @media (max-width: 925px) {
+
+.contact-form{
+  width: 70%;
+  padding-inline:3rem ;
+  margin-top:2rem ;
+  margin-inline: auto;
+  border-radius: 0rem ;
+  background: transparent;
+}
+input {
+  align-self: center;
+  margin-block: 0.5rem;
+  align-self:center;
+  margin-inline: auto;
+  width: 96%;
+  padding: .6rem;
+  background: transparent;
+  border: #021740 1px solid;
+  border-radius: 3rem;
+  color: #021740;
+  outline-color: #F2CEF2;
+}
+
+input.message-input {
+  border-radius: 1.2rem;
+  padding-bottom: 9rem;
+  
+}
+/* form typo */
+.contact-form p{
+  color: #ffffff;
+  font-family: 'Cantarell';
+  line-height: inherit;
+
+}
+.contact-form strong{
+  color: #ffffff;
+}
+
+}
