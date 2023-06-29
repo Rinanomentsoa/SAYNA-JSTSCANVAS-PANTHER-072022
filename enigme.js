@@ -34,6 +34,7 @@ window.addEventListener('scroll', animateOnScroll);
 
     if (answerInput) {
       showPopup(); 
+      changeEnigme();
       document.getElementById("answerForm").reset(); // Réinitialiser le formulaire
     } else {
       alert("Veuillez insérer une réponse"); // Afficher un message si une valeur est incomplète
@@ -43,10 +44,13 @@ window.addEventListener('scroll', animateOnScroll);
     document.getElementById("popupBox").style.display = "block";}
 
     //ENIGME SUIVANTE
-var nextButton = document.getElementById('nextButton');
+let nextButton = document.getElementById('nextButton');
 nextButton.addEventListener('click', function() {
-  changeEnigme(); 
-  hidePopup();
+  if(nextButton.textContent==='REVENIR À L\'ACCUEIL'){
+    window.location.href = "index.html";  
+  } else{
+    hidePopup(); 
+  };
 });
 
 // Passer à l'énigme suivante et changer les contenus
@@ -82,9 +86,6 @@ function changeEnigme() {
     startCountdown();
     popupText.textContent = 'TON INITIATION EST TERMINÉE';
     nextButton.textContent = 'REVENIR À L\'ACCUEIL';
-    nextButton.addEventListener('click', function() {
-      window.location.href = "index.html";
-    });
   }
 }
 //fermer PopupBox

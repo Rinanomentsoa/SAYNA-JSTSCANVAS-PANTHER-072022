@@ -191,6 +191,7 @@ p.more{
   font-weight: 100;
   font-family: 'Cantarell' ;
 }
+
 p.more:hover{
   font-size: 0.9rem ;
   transition: all .5s ease;
@@ -201,11 +202,11 @@ p.more:hover{
   color: #FFFFFF;
   background-color: #07338C;
   border-radius: 3rem;
-  padding: .5rem;
+  padding: .7rem;
   position: absolute;
-  top: 50%;
+  bottom: -10%;
   right: 2%;
-  z-index: 100;
+  z-index: 1000;
 }
 .ri-arrow-right-s-line:hover{
   color: #07338C;
@@ -223,25 +224,30 @@ p.more:hover{
 .slide-next{
   display: flex;
   background-color: #021740;
+  padding: 0;
   margin-block:2rem;
 }
 
 img.slider{
-  width: 20rem;
-  height: auto;
+  width: 14rem;
+  height: 18rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+img.first{
+  width: 19rem;
+  height: 21rem;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
 
+
 .slide-container .article{
   height: auto;
     padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 0rem;
     padding-inline: 1rem ;
   }
-
-
-
 
 /* Grid layout*/
 
@@ -458,41 +464,29 @@ input.message-input {
   display: none;
 }
 
-.popup-bg{
-  position: fixed;
-  margin-inline: auto;
-  top:350vh;
-  left: 30%;
-  border-radius: 7%;
-  background: rgb(61,45,166);
-background: linear-gradient(180deg, rgba(61,45,166,1) 0%, rgba(2,23,64,1) 48%);
-  filter: blur(0.5rem);
-  width: 40vw;
-  height: 60vh;
-  z-index: 100;
-}
 .popup {
-  
-  position: fixed;
+  position: relative;
   margin-inline: auto;
   bottom: 100vh;
   width: 25%;
-  height: 35vh;
+  height: 37vh;
   text-align: center;
-background: linear-gradient(180deg, rgba(158,145,183,1) 0%, rgba(61,45,166,0) 100%);
-  box-shadow: 0 3.45px 3.45px rgba(0, 0, 0, 0.04);
+background: linear-gradient(180deg, rgba(158,145,183,1) 0%, rgba(61,45,166,1) 100%);
+  box-shadow: 0  -60px 60px 38px rgba(61, 45, 166, 1), 0  2px 13px 98px rgba(2, 23, 64, 1);
   border:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 48%);
   border-radius: 5%;
   border-width: 0.5px;
-  z-index: 130;
+  z-index: 250;
 }
+
 .popup p{
   padding-inline:10% ;
   padding-top:8%;
   font-size: medium;
-
 }
+
 #closeButton {
+  border: #3b992a solid;
   align-self: center;
   color: #021740;
   margin-top: 1.5em;

@@ -196,13 +196,11 @@ width: 2.5px;
   }
 /* MAIN  section2*/
 .main-wrapper{
-  border: #afff0f solid 3px;
   padding-inline: 5rem;
   display: flex;
   
 }
 .gauche{
-  border: #0fffdb solid 3px;
   padding-inline: 4rem;
   padding-top: 2rem;
   justify-items: center;
@@ -282,19 +280,6 @@ button {
   display: none;
 }
 
-.popup-bg{
-  position: absolute;
-  margin-inline: auto;
-  top:150vh;
-  left: 8%;
-  border-radius: 7%;
-  background: rgb(61,45,166);
-background: linear-gradient(180deg, rgba(61,45,166,1) 0%, rgba(2,23,64,1) 48%);
-  filter: blur(0.5rem);
-  width: 40vw;
-  height: 60vh;
-  z-index: 100;
-}
 .popup {
   position: relative;
   margin-inline: auto;
@@ -336,13 +321,11 @@ background: linear-gradient(180deg, rgba(158,145,183,1) 0%, rgba(61,45,166,1) 10
 /* COMING SOON  section*/
 #comingSoonSection{
   margin-inline: 4%;
-  border: #0fffdb solid;
   display: none;
   padding-inline: 4%;
   justify-items: center;
 }
 #logo-figma{
-  border: #a0d7fe solid;
   width: 18%;
   padding-inline:4% ;
 }
@@ -351,7 +334,6 @@ background: linear-gradient(180deg, rgba(158,145,183,1) 0%, rgba(61,45,166,1) 10
   font-size: 1rem;
   color:#ffffff;
   font-weight: 700;
-  border: #c8efa5 solid;
   margin-inline: auto;
   margin-block:0 ;
   padding-block:0 ;
@@ -361,7 +343,6 @@ background: linear-gradient(180deg, rgba(158,145,183,1) 0%, rgba(61,45,166,1) 10
   font-size: 1.8rem;
   color:#ffffff;
   font-weight: 900;
-  border: #eb9479 solid;
   margin-inline: auto;
   margin-block:0 ;
   padding-block:0 ;
