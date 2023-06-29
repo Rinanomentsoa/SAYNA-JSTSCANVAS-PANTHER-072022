@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Box icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--Remix icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>Enigme</title>
     <link href="//db.onlinewebfonts.com/c/582850da0def991b32a24aa69a948d25?family=Wakanda+Forever" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="enigme.css">
@@ -25,29 +29,80 @@
 </header>
     <!--MAIN-->
 <main>
+ <!--Side icons-->
+ <div class="side-icons">
+    <div class="first-line"> </div>
+<div class="second">
+
+<div class="second-line"> </div>    
+<div class="icons">
+<a href="#"><i class="ri-facebook-fill"></i></a>
+<a href="#"><i class="ri-instagram-fill"></i></a>
+<a href="#"><i class="ri-twitter-fill"></i></a>
+<a href="#"><i class="ri-tiktok-fill"></i></a>
+</div>
+</div>
+
+</div>
+
     <!--Première section avec l'image-->
     <div class="wrapper">
-        <div class="image fade-in-left">
+        <div class="image animation-slide">
             <img src="Assets/Pantherenigme1.png">
         </div>
-        <div class="content fade-in-left">
+        <div class="content animation-slide">
             <h1>Releve le defi
             <br>des dora milaje</h1>
-            <img class="deco fade-in-left" src="Assets/Pantherenigme2.png">
-            <p class="float fade-in-left">
+            <img class="deco animation-slide" src="Assets/Pantherenigme2.png">
+            <p class="float animation-slide">
                 Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la vie. Leur Générale, 
                 Okoyé est également la dirigeante des forces armées et des renseignements wakandais.<br>Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, et apprend par la même occasion la première valeur d’une Dora Milaje !
             </p>
-            <img class="deco2 fade-in-left" src="Assets/Pantherenigme3.png">  
+            <img class="deco2 animation-slide" src="Assets/Pantherenigme3.png">  
         </div>
     </div>
 
     <!--Deuxième section -->
-    <h3 class="fade-in-left">“ SI JE SUIS FIDELE C’EST A CE TRONE <br>PEU IMPORTE QUI MONTE DESSUS ”</h3>
+    
 <div class ="main-wrapper"> 
     <div class="gauche alphabets">
-        <p  class="fade-in-left">Voici la transcription de l’alphabet :</p>
-        <p class="fade-in-left"> A=<span>A</span>;
+    <p class="animation-slide enigme-title">ENIGME NUMERO <strong id="enigme-number">1</strong></p>
+    <p class="animation-slide" id="enigme-question">Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, et apprend par la même occasion la première valeur d’une Dora Milaje !</p>
+    <h3 class="animation-slide" id="enigme-text">“ SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS ”</h3>
+    
+    <!--FORMULAIRE DE RÉPONSES-->
+<form class="form animation-slide" id="answerForm">
+                <label>As tu la réponse ?</label><br>
+                <input class="answer-input" type="text" placeholder="Réponse"><br>  
+                <p class="animation-slide" id="button"><button type="submit">ENVOYER</button></p>
+</form>
+
+
+<!--POPUP BOX-->
+<div id="popupBox">
+    <!--<div class="popup-bg"></div>-->
+    <div class="popup">
+        <p>BRAVO !<br>
+        Tu as trouvé la bonne réponse.</p>
+    <p id="nextButton"><button type="submit">QUESTION SUIVANTE</button></p>
+     <!--Coming soon compte à rebours-->
+   <section id="comingSoonSection">
+    <img src="Assets/figma_logo.svg" alt="Logo Figma" id="logo-figma">
+   <div id="countdown">
+    <h3>COMING SOON...</h3>
+    <h1 id="countdownTimer">00:00</h1><!--compte à rebours-->
+   </div>
+   </section>
+    </div>
+ </div>
+    </div>
+
+    <div class="droite animation-slide">
+        <img class="deco" src="Assets/Pantherenigme2.png">
+        <p class="float2" id="floating-text">
+            Voici la transcription de l’alphabet :
+            <br>
+            A=<span>A</span>;
             B=<span>B</span>;
             C=<span>C</span>;
             D=<span>D</span>;
@@ -73,18 +128,7 @@
               X= <span>X</span>; 
               Y=<span>Y</span> ; 
               Z= <span>Z</span>;
-</p>
-    <form class="form fade-in-left">
-                <label>As tu la réponse ?</label><br>
-                <input type="text" placeholder="Réponse"><br>  
-</form>
-<p class="fade-in-left" id="button"><a>ENVOYER</a></p>
-    </div>
-
-    <div class="droite fade-in-left">
-        <img class="deco" src="Assets/Pantherenigme2.png">
-        <p class="float2">Le savais tu ?<br>
-            Plusieurs sources s’entendent pour dire que la lettre la plus utilisée enfrançais est la lettre E.En pourcentage de fréquence,la lettre est utilisée à 14% dans une phrase. Et si tu regardais quel symbole revient le plus souvent ?</p>
+        </p>
     </div>
 </div>  
    
@@ -95,7 +139,7 @@
     <footer>
         <div class="footer"> <!--Cette section sera disposée en flex-->
             <!--LOGO ET IMAGE-->
-            <div class="footer-image">
+            <div class="footer-image animation-slide">
                 <img id="footer-deco" src="Assets/footer1.png">
                 <img id="footer-logo" src="Assets/footer2.png">
             </div>
@@ -104,13 +148,13 @@
                 <!--TOP SIDE-->
                 <div class="side-to-side">
                     <!--Section Pages-->
-                    <div >
+                    <div class="animation-slide">
                         <h1>PAGES</h1>
                         <p><a href="#">À propos</a></p>
                         <p><a href="#">Wakanda</a></p>
                     </div>
                     <!--Section Retrouvez nous-->
-                    <div>
+                    <div class="animation-slide">
                         <h1>RETROUVEZ-NOUS</h1>
                         <!--Liste des icônes-->
                         <div class="icon-list">
@@ -123,7 +167,7 @@
                 </div>
     
                 <!--COPYRIGHT-->
-                <p>2022 Tous droits réservés &#9679 Politique de confidentialité &#9679 Conditions d’utilisation</p>
+                <p class="animation-slide">2022 Tous droits réservés &#9679 Politique de confidentialité &#9679 Conditions d’utilisation</p>
                 
     
             </div>

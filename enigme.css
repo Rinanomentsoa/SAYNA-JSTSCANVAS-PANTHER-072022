@@ -86,13 +86,74 @@ h3{
   line-height: 3rem;
   color: #9E91B7;
   font-family: 'Wakanda Forever' ;
-  padding-left: 5rem;
-  padding-top: 0;
+  padding-top: 1rem;
 }
 span{
   line-height: 1.5rem;
   font-family: 'Wakanda Forever';
   font-size: 1rem ;
+}
+.enigme-title {
+  font-family: 'Beyno';
+  color: #9E91B7;
+  text-decoration: underline;
+  font-size: 1.5rem ;
+}
+
+.enigme-title strong{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Side icons*/
+.side-icons{
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+top: 0%;
+left: 1%;
+}
+.first-line{
+background-color: #9E91B7;
+height: 28rem;
+width: 2.5px;
+}
+.second-line{
+  background-color: #9E91B7;
+  height: 20rem;
+  width: 2px;
+  margin-inline: auto;
+  }
+.second{
+  width: 30%;
+  display: block;
+  
+}
+.second a{
+  text-decoration: none;
+  margin-inline: auto;
+}
+.icons{
+  margin-inline:auto ;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  place-items: center;
+  padding-inline:auto ;
+}
+.icons i{
+  padding-top: 1em ;
+  display: block;
+  place-self: center;
+  margin-inline: auto;
+  padding-inline:auto ;
+  color: #9E91B7;
+}
+.icons i:hover{
+  transform: scale(1.5);
+  color: #DF99F2;
 }
    /*MAIN section 1*/
    .wrapper{
@@ -134,12 +195,14 @@ span{
   }
 /* MAIN  section2*/
 .main-wrapper{
+  border: #afff0f solid 3px;
   padding-inline: 5rem;
   display: flex;
   
 }
 .gauche{
-  padding-inline: 5rem;
+  border: #0fffdb solid 3px;
+  padding-inline: 4rem;
   padding-top: 2rem;
   justify-items: center;
   display: block;
@@ -186,7 +249,7 @@ input {
   align-self:center;
   margin-inline: auto;
   width: 96%;
-  padding: .6rem;
+  padding: .8rem;
   background: transparent;
   border: #F2CEF2 1.5px solid;
   border-radius: 3rem;
@@ -201,10 +264,109 @@ input {
   z-index: 100;
 }
 form{
-  margin-top: 5rem;
+  margin-top: 1rem;
   justify-content: center;
   
 }
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: transparent;
+}
+/*POPUP*/
+/* Styles pour le popup box */
+#popupBox{
+  display: none;
+}
+
+.popup-bg{
+  position: absolute;
+  margin-inline: auto;
+  top:150vh;
+  left: 8%;
+  border-radius: 7%;
+  background: rgb(61,45,166);
+background: linear-gradient(180deg, rgba(61,45,166,1) 0%, rgba(2,23,64,1) 48%);
+  filter: blur(0.5rem);
+  width: 40vw;
+  height: 60vh;
+  z-index: 100;
+}
+.popup {
+  position: relative;
+  margin-inline: auto;
+  bottom: 45vh;
+  width: 75%;
+  height: 35vh;
+  text-align: center;
+background: linear-gradient(180deg, rgba(158,145,183,1) 0%, rgba(61,45,166,1) 100%);
+  box-shadow: 0  -60px 60px 38px rgba(61, 45, 166, 1), 0  2px 13px 98px rgba(2, 23, 64, 1);
+  border:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 48%);
+  border-radius: 5%;
+  border-width: 0.5px;
+  z-index: 250;
+}
+.popup p{
+  padding-inline:10% ;
+  padding-top:15%;
+  line-height: 2.4rem;
+  font-size: medium;
+  text-align: center;
+
+}
+#nextButton {
+  align-self: center;
+  color: #021740;
+  margin-top: 1.5em;
+  margin-inline: auto;
+  justify-content: center;
+  width: fit-content;
+  padding:  .5rem 3rem;
+  background: #F2CEF2;
+  border-radius: 3rem ;
+}
+
+#nextButton:hover{
+  box-shadow: 0px 0px 6px#021740 ;
+}
+
+/* COMING SOON  section*/
+#comingSoonSection{
+  margin-inline: 4%;
+  border: #0fffdb solid;
+  display: none;
+  padding-inline: 4%;
+  justify-items: center;
+}
+#logo-figma{
+  border: #a0d7fe solid;
+  width: 18%;
+  padding-inline:4% ;
+}
+#comingSoonSection h3{
+  font-family: 'Cantarell';
+  font-size: 1rem;
+  color:#ffffff;
+  font-weight: 700;
+  border: #c8efa5 solid;
+  margin-inline: auto;
+  margin-block:0 ;
+  padding-block:0 ;
+}
+#comingSoonSection h1{
+  font-family: 'Cantarell';
+  font-size: 1.8rem;
+  color:#ffffff;
+  font-weight: 900;
+  border: #eb9479 solid;
+  margin-inline: auto;
+  margin-block:0 ;
+  padding-block:0 ;
+}
+
+
 /* FOOTER */
 
 footer{
@@ -502,6 +664,13 @@ footer{
       padding-right: 2rem;
       overflow: hidden;
     }
-
-    
     }
+
+    /* ANIMATIONS*/
+  /* Scrolling animations: apparition gauche droite) */
+  .animation-slide {
+    opacity: 0; /* L'élément est initialement invisible */
+    transform: translateX(-100%); /* Décale l'élément complètement vers la gauche */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition d'opacité et de translation */
+  }
+  

@@ -203,7 +203,7 @@ p.more:hover{
   border-radius: 3rem;
   padding: .5rem;
   position: absolute;
-  top: 115%;
+  top: 50%;
   right: 2%;
   z-index: 100;
 }
@@ -389,6 +389,14 @@ background: linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(231, 225,
   padding-block: 2rem;
   padding-inline: 10rem ;
 }
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background-color: transparent;
+}
+
 #button {
   align-self: center;
   color: #021740;
@@ -443,6 +451,61 @@ input.message-input {
   letter-spacing: 0.5px;
   font-family: 'Cantarell';
 
+}
+/*POPUP*/
+/* Styles pour le popup box */
+#popupBox{
+  display: none;
+}
+
+.popup-bg{
+  position: fixed;
+  margin-inline: auto;
+  top:350vh;
+  left: 30%;
+  border-radius: 7%;
+  background: rgb(61,45,166);
+background: linear-gradient(180deg, rgba(61,45,166,1) 0%, rgba(2,23,64,1) 48%);
+  filter: blur(0.5rem);
+  width: 40vw;
+  height: 60vh;
+  z-index: 100;
+}
+.popup {
+  
+  position: fixed;
+  margin-inline: auto;
+  bottom: 100vh;
+  width: 25%;
+  height: 35vh;
+  text-align: center;
+background: linear-gradient(180deg, rgba(158,145,183,1) 0%, rgba(61,45,166,0) 100%);
+  box-shadow: 0 3.45px 3.45px rgba(0, 0, 0, 0.04);
+  border:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 48%);
+  border-radius: 5%;
+  border-width: 0.5px;
+  z-index: 130;
+}
+.popup p{
+  padding-inline:10% ;
+  padding-top:8%;
+  font-size: medium;
+
+}
+#closeButton {
+  align-self: center;
+  color: #021740;
+  margin-top: 1.5em;
+  margin-inline: auto;
+  justify-content: center;
+  width: fit-content;
+  padding:  .5rem 3rem;
+  background: #F2CEF2;
+  border-radius: 3rem ;
+}
+
+#closeButton:hover{
+  box-shadow: 0px 0px 6px#021740 ;
 }
 
 
@@ -772,3 +835,12 @@ input.message-input {
 }
 
 }
+
+/* ANIMATIONS*/
+  /* Scrolling animations: apparition gauche droite) */
+  .animation-slide {
+    opacity: 0; /* L'élément est initialement invisible */
+    transform: translateX(-100%); /* Décale l'élément complètement vers la gauche */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition d'opacité et de translation */
+  }
+  

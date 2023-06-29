@@ -96,6 +96,57 @@ main{
   height: fit-content;
   margin: 0;
 }
+/* Side icons*/
+.side-icons{
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+top: 0%;
+left: 1%;
+}
+.first-line{
+background-color: #9E91B7;
+height: 28rem;
+width: 2.5px;
+}
+.second-line{
+  background-color: #9E91B7;
+  height: 20rem;
+  width: 2px;
+  margin-inline: auto;
+  }
+.second{
+  width: 30%;
+  display: block;
+  
+}
+.second a{
+  text-decoration: none;
+  margin-inline: auto;
+}
+.icons{
+  margin-inline:auto ;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  place-items: center;
+  padding-inline:auto ;
+}
+.icons i{
+  padding-top: 1em ;
+  display: block;
+  place-self: center;
+  margin-inline: auto;
+  padding-inline:auto ;
+  color: #9E91B7;
+}
+.icons i:hover{
+  transform: scale(1.5);
+  color: #DF99F2;
+}
     /* Grid layout*/ 
     .article{
       height: fit-content;
@@ -488,5 +539,17 @@ footer{
       column-gap: 3rem;
     }
      }
+  .zoom-wakanda:hover{
+    transform: scale(1.2);
+  }
+
+  /* ANIMATIONS*/
+  /* Scrolling animations: apparition gauche droite) */
+  .animation-slide {
+    opacity: 0; /* L'élément est initialement invisible */
+    transform: translateX(-100%); /* Décale l'élément complètement vers la gauche */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition d'opacité et de translation */
+  }
   
+
   
